@@ -50,12 +50,12 @@ Como este projeto será desenvolvido progressivamente por agentes de IA, as tare
 
 ## Fase 3: Lógica de Interface e Integração Final
 
-- [ ] **Task 8: Implementação do Fluxo de Busca e Estado de Carregamento**
+- [x] **Task 8: Implementação do Fluxo de Busca e Estado de Carregamento**
   - **Descrição:** No `main.ts`, escutar o formulário de busca. Quando disparado, acionar visualmente um *loading indicator* (seja trocando o ícone/texto do botão ou no próprio container central) e coordenar o consumo encadeado das APIs (Geocoding -> Weather).
   - **Referência:** PRD - Seção 2.1 e 3.2
   - **Critério de Aprovação:** Ao disparar a pesquisa, o usuário vê instantaneamente um indicativo de carregamento. O terminal/console do navegador evidencia as requisições sendo disparadas em sequência correta.
 
-- [ ] **Task 9: Manipulação da DOM (Renderização Condicional e Dados Reais)**
+- [x] **Task 9: Manipulação da DOM (Renderização Condicional e Dados Reais)**
   - **Descrição:** Com os dados das APIs, substituir as informações mockadas no HTML pelos dados reais e processados (traduzindo o weather_code, lidando com formatação de data para "Dia atual", etc). Alternar visualmente entre o "Card de Clima" (sucesso) e o "Empty State" (erro/não encontrado) baseado nos retornos da API.
   - **Referência:** PRD - Seção 2.1 e 4.2
   - **Critério de Aprovação:** Fluxo final totalmente funcional. Pesquisar por "São Paulo" esconde o Empty State e preenche o Card com clima real. Pesquisar por cidade inválida "xzzxxzx" esconde o Card e exibe o Empty State perfeitamente. O comportamento de loading funciona entre transições.
