@@ -26,22 +26,22 @@ Como este projeto será desenvolvido progressivamente por agentes de IA, as tare
 
 ## Fase 2: Estrutura Visual e Componentes HTML/CSS
 
-- [ ] **Task 4: Estrutura Base e Variáveis Globais (Layout Global)**
+- [x] **Task 4: Estrutura Base e Variáveis Globais (Layout Global)**
   - **Descrição:** Construir a marcação HTML (`index.html`) inicial contendo um container no topo para o input de busca e um container no meio para o conteúdo. No CSS (`style.css`), definir fonte moderna, background geral "cinza escuro" e remover margens padrão do navegador.
   - **Referência:** PRD - Seção 4.1
   - **Critério de Aprovação:** A página exibe o campo de pesquisa flutuando transparentemente na parte superior de um fundo cinza escuro, com estilos base aplicados.
 
-- [ ] **Task 5: Estrutura Estática do Card Principal (Desktop)**
+- [x] **Task 5: Estrutura Estática do Card Principal (Desktop)**
   - **Descrição:** Construir no HTML e CSS a estrutura estática do "Card de Clima" (fundo branco, max 800px, bordas arredondadas) e dividi-lo com display flex/grid contendo a Sidebar à esquerda e a Área Principal à direita com dados "mockados" (fictícios) no HTML para validação visual.
   - **Referência:** PRD - Seção 4.2
   - **Critério de Aprovação:** Renderização visual exata do Card de Clima descrita no PRD, com alinhamento, preenchimentos e hierarquia visual coerentes em resoluções de desktop (largura > 800px).
 
-- [ ] **Task 6: Design do Empty State**
+- [x] **Task 6: Design do Empty State**
   - **Descrição:** Construir o markup e os estilos de um "Empty State" centralizado para ser exibido quando não houver cidade pesquisada ou quando houver erro.
   - **Referência:** PRD - Seção 4.3
   - **Critério de Aprovação:** O HTML contendo a mensagem do Empty State deve estar legível, alinhado ao centro e harmonioso com o fundo geral da aplicação.
 
-- [ ] **Task 7: Responsividade**
+- [x] **Task 7: Responsividade**
   - **Descrição:** Adicionar `media queries` no CSS para reorganizar o Card Principal e o layout em telas menores, alternando a disposição da Sidebar e Área principal para empilhamento vertical, ajustando margens e paddings.
   - **Referência:** PRD - Seção 4.4
   - **Critério de Aprovação:** Ao diminuir a largura da tela do navegador para tamanho mobile (ex: < 600px), o layout automaticamente empilha a Sidebar em cima e a Área Principal abaixo, ocupando a largura adequada da tela sem estourar barras de rolagem horizontais.

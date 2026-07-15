@@ -1,13 +1,68 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>clima</title>
+    <title>Projeto Clima</title>
+    <!-- Modern Font: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <header class="header">
+        <form id="search-form">
+          <input type="text" id="city-input" placeholder="Digite o nome da cidade..." autocomplete="off" />
+          <button type="submit">Buscar</button>
+        </form>
+      </header>
+      
+      <main class="main-container">
+        <!-- Empty State -->
+        <div id="empty-state" class="empty-state hidden">
+          <h2>Bem-vindo ao Clima</h2>
+          <p>Busque por uma cidade para ver as condições climáticas atuais.</p>
+        </div>
+        
+        <!-- Loading State -->
+        <div id="loading-state" class="loading-state hidden">
+          <div class="spinner"></div>
+          <p>Buscando...</p>
+        </div>
+
+        <!-- Weather Card (Mocked for visual validation) -->
+        <div id="weather-card" class="weather-card">
+          <div class="sidebar">
+            <h1 class="temperature">24°C</h1>
+            <h2 class="city">São Paulo, BR</h2>
+            <p class="date">Segunda-feira, 15 Jul</p>
+            <p class="day-night">Dia ☀️</p>
+            <p class="weather-code">Céu limpo</p>
+          </div>
+          
+          <div class="main-details">
+            <div class="detail-item">
+              <span class="detail-label">Umidade Relativa</span>
+              <span class="detail-value">45%</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Sensação Térmica</span>
+              <span class="detail-value">26°C</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Prob. Precipitação</span>
+              <span class="detail-value">10%</span>
+            </div>
+            <div class="detail-item">
+              <span class="detail-label">Vento (Veloc. / Dir.)</span>
+              <span class="detail-value">15 km/h (120°)</span>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
